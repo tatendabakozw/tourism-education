@@ -10,7 +10,7 @@ function Navbar({}: Props) {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="javascript:void(0)">
-              <h2 className="text-2xl font-bold text-white">LOGO</h2>
+              <h2 className="text-2xl font-bold text-white">RCZ</h2>
             </a>
             <div className="md:hidden">
               <button
@@ -73,13 +73,13 @@ function Navbar({}: Props) {
 
             <div className="mt-3 space-y-2 lg:hidden md:inline-block">
               <a
-                href="javascript:void(0)"
+                href="/login"
                 className="inline-block w-full px-4 py-2 text-center text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
               >
                 Sign in
               </a>
               <a
-                href="javascript:void(0)"
+                href="/register"
                 className="inline-block w-full px-4 py-2 text-center text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
               >
                 Sign up
@@ -89,13 +89,13 @@ function Navbar({}: Props) {
         </div>
         <div className="hidden space-x-2 md:inline-block">
           <a
-            href="javascript:void(0)"
+            href="/login"
             className="px-4 py-2 text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
           >
             Sign in
           </a>
           <a
-            href="javascript:void(0)"
+            href="/register"
             className="px-4 py-2 text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
           >
             Sign up

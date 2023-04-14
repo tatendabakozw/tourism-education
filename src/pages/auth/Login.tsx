@@ -1,22 +1,23 @@
-import GeneralLayout from '@layouts/GeneralLayout'
-import { Divider, useToast } from '@chakra-ui/react'
-import React, { useState } from 'react'
-import { getMessage } from '@helpers/getMessage'
-import PrimaryButton from '@components/buttons/PrimaryButton'
-import {EyeIcon, EyeSlashIcon} from '@heroicons/react/24/outline'
-import GoogleAuthButton from '@components/buttons/GoogleAuthButton'
+import GeneralLayout from "@layouts/GeneralLayout";
+import { Divider, useToast } from "@chakra-ui/react";
+import React, { useState } from "react";
+import { getMessage } from "@helpers/getMessage";
+import PrimaryButton from "@components/buttons/PrimaryButton";
+import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
+import GoogleAuthButton from "@components/buttons/GoogleAuthButton";
+import { Link } from "react-router-dom";
 
-type Props = {}
+type Props = {};
 
 const Login = (props: Props) => {
-  const [email, setEmail] = useState<string>('')
-  const [password, setPassword] = useState<string>('')
-  const [show_password, setShowPassword] = useState<boolean>(false)
-  const [loading, setLoading] = useState<boolean>(false)
-  const toast = useToast()
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [show_password, setShowPassword] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
+  const toast = useToast();
 
   const login_user_handler = async () => {
-    setLoading(true)
+    setLoading(true);
     try {
       // const { data } = await axios.post(`${apiUrl}/api/auth/login`, {
       //   email,
@@ -28,30 +29,30 @@ const Login = (props: Props) => {
       //   //@ts-ignore
       //   history.push(redirect || '/')
       // }, 1000)
-      setLoading(false)
+      setLoading(false);
       toast({
-        title: 'Login successful.',
-        status: 'success',
-        position: 'top-right',
+        title: "Login successful.",
+        status: "success",
+        position: "top-right",
         duration: 9000,
         isClosable: true,
-      })
-    } catch (error:any) {
-      setLoading(false)
+      });
+    } catch (error: any) {
+      setLoading(false);
       //@ts-ignore
       toast({
         title: getMessage(error),
-        status: 'error',
-        position: 'top-right',
+        status: "error",
+        position: "top-right",
         duration: 9000,
         isClosable: true,
-      })
+      });
     }
-  }
+  };
 
-  const login_With_Google  = async () => {
+  const login_With_Google = async () => {
     try {
-      setLoading(true)
+      setLoading(true);
       // const res = await signInWithPopup(auth, googleProvider)
       // const user = res.user
       // const { data } = await axios.post(`${apiUrl}/api/auth/login`, {
@@ -60,43 +61,42 @@ const Login = (props: Props) => {
       // })
       // dispatch({ type: 'USER_LOGIN', payload: data })
       // history.push('/explore')
-      setLoading(false)
+      setLoading(false);
       toast({
-        title: 'Login Successful',
-        status: 'success',
-        position: 'top-right',
+        title: "Login Successful",
+        status: "success",
+        position: "top-right",
         duration: 9000,
         isClosable: true,
-      })
-    } catch (error:any) {
-      setLoading(false)
+      });
+    } catch (error: any) {
+      setLoading(false);
       toast({
         title: getMessage(error),
-        status: 'error',
-        position: 'top-right',
+        status: "error",
+        position: "top-right",
         duration: 9000,
         isClosable: true,
-      })
+      });
     }
-  }
+  };
   return (
     <GeneralLayout>
-       <div className="flex min-h-screen flex-col bg-gray-100 sm:px-6 lg:px-8">
+      <div className="flex min-h-screen flex-col bg-gray-100 sm:px-6 lg:px-8">
         <div className="pt-12 sm:mx-auto sm:w-full sm:max-w-md">
-          <h1 className="mt-2 text-center text-lg font-extrabold text-gray-900 md:text-3xl">
-            Login to your account
+          <h1 className="my-2 text-center text-lg font-extrabold text-gray-900 md:text-3xl">
+            Login
           </h1>
         </div>
 
         <div className="mt-4 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-
-              <GoogleAuthButton onClick={login_With_Google} loading={loading} />
-          <div className="flex w-full flex-row items-center space-x-4 py-4">
-                <Divider />
-                <p>Or</p>
-                <Divider />
-              </div>
+            <GoogleAuthButton onClick={login_With_Google} loading={loading} />
+            <div className="flex w-full flex-row items-center space-x-4 py-4">
+              <Divider />
+              <p>Or</p>
+              <Divider />
+            </div>
 
             <div className="space-y-6">
               <div>
@@ -132,7 +132,7 @@ const Login = (props: Props) => {
                     <input
                       id="password"
                       name="password"
-                      type={show_password ? 'text' : 'password'}
+                      type={show_password ? "text" : "password"}
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       required
@@ -196,19 +196,16 @@ const Login = (props: Props) => {
                   loading={loading}
                 />
               </div>
-              
-              <p
-                // onClick={() => history.push('/register')}
-                className="my-4 cursor-pointer text-center text-sm font-semibold text-gray-500 hover:text-gray-700"
-              >
-                Not registered? Register instead!
-              </p>
+
+              <div className="my-4 cursor-pointer text-center text-sm font-semibold text-gray-500 hover:text-gray-700">
+                <Link to="/login">Not registered? Register instead!</Link>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </GeneralLayout>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
