@@ -68,8 +68,8 @@ const DashboardNavbar = ({ setSidebarOpen }: Props) => {
         {/* Search bar */}
         <div className="flex-1 md:px-8 px-4 flex justify-between">
           <div className="flex-1 flex flex-col my-2">
-            <p className="text-slate-700 font-semibold">Good {timeOfDay}, </p>
-            <p className="text-slate-900 text-2xl font-bold">tatenda bako</p>
+            <p className="text-slate-900 text-2xl font-bold">Good {timeOfDay} </p>
+            {/* <p className="text-slate-900 text-2xl font-bold">tatenda bako</p> */}
           </div>
           <div className="ml-4 flex items-center md:ml-6">
             <button

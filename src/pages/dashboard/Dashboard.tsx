@@ -21,19 +21,19 @@ const Dashboard = (props: Props) => {
             </div>
             <div className="col-span-1 grid items-center">
               <div className="flex flex-row items-center space-x-2">
-                <div className="bg-slate-100 p-2 rounded-full">
+                <div className="bg-[#0284c7] text-white p-2 rounded-full">
                   <HomeIcon height={24} width={24} />
                 </div>
                 <p>Toilet</p>
               </div>
               <div className="flex flex-row items-center space-x-2">
-                <div className="bg-slate-100 p-2 rounded-full">
+                <div className="bg-[#0e7490] p-2 rounded-full text-white">
                   <HomeIcon height={24} width={24} />
                 </div>
                 <p>Kitchen</p>
               </div>
               <div className="flex flex-row items-center space-x-2">
-                <div className="bg-slate-100 p-2 rounded-full">
+                <div className="bg-[#67e8f9] p-2 rounded-full">
                   <HomeIcon height={24} width={24} />
                 </div>
                 <p>Bathroom</p>

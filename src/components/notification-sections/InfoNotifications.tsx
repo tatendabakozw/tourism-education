@@ -10,23 +10,27 @@ const InfoNotifications = (props: Props) => {
 
   const infos = [
     {
-      details: "Info item 1",
+      details: "TIP: Turn off tap when not in use",
       date: "12/12/2023",
       status: "success",
     },
     {
-      details: "Info item 2",
+      details: "TIP: Take short showers to save water",
       date: "24/12/2023",
       status: "pending",
     },
     {
-      details: "Info item 3",
+      details: "TIP: Collect rain water for gardening or landscaping",
       date: "10/12/2023",
       status: "success",
     },
-    { details: "Info item 4", date: "12/12/2023", status: "error" },
     {
-      details: "Info item 5",
+      details: "TIP: Repair dripping faucets",
+      date: "12/12/2023",
+      status: "error",
+    },
+    {
+      details: "TIP: Furn off faucets when brushing teeth",
       date: "12/12/2023",
       status: "success",
     },
