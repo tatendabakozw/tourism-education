@@ -5,7 +5,7 @@ import { getMessage } from "@helpers/getMessage";
 import PrimaryButton from "@components/buttons/PrimaryButton";
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
 import GoogleAuthButton from "@components/buttons/GoogleAuthButton";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 type Props = {};
 
@@ -15,6 +15,7 @@ const Login = (props: Props) => {
   const [show_password, setShowPassword] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
   const toast = useToast();
+  const history = useNavigate();
 
   const login_user_handler = async () => {
     setLoading(true);
@@ -27,9 +28,9 @@ const Login = (props: Props) => {
       // Cookies.set('userInfo', JSON.stringify(data), { expires: 7 })
       // setTimeout(() => {
       //   //@ts-ignore
-      //   history.push(redirect || '/')
       // }, 1000)
       setLoading(false);
+      history("/dashboard");
       toast({
         title: "Login successful.",
         status: "success",
@@ -81,7 +82,7 @@ const Login = (props: Props) => {
     }
   };
   return (
-    <>
+    <GeneralLayout>
       <div className="flex min-h-screen flex-col bg-gray-100 sm:px-6 lg:px-8">
         <div className="pt-12 sm:mx-auto sm:w-full sm:max-w-md">
           <h1 className="my-2 text-center text-lg font-extrabold text-gray-900 md:text-3xl">
@@ -204,7 +205,7 @@ const Login = (props: Props) => {
           </div>
         </div>
       </div>
-    </>
+    </GeneralLayout>
   );
 };
 
