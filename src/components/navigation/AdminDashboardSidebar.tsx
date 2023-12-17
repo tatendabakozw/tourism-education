@@ -2,6 +2,7 @@ import {
   ArrowTrendingUpIcon,
   BanknotesIcon,
   BellIcon,
+  HomeIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { Dialog, Transition } from "@headlessui/react";
@@ -10,22 +11,34 @@ import { Fragment } from "react";
 
 const buyer_navigation = [
   {
-    name: "Analytics",
-    href: "/dashboard",
+    name: "Home",
+    href: "/dashboard-admin",
+    icon: HomeIcon,
+    current: false,
+  },
+  {
+    name: "Maintainance",
+    href: "/maintanance",
     icon: ArrowTrendingUpIcon,
     current: false,
   },
-  {
-    name: "Notifications",
-    href: "/dashboard/notifications",
-    icon: BellIcon,
-    current: false,
-  },
-  {
-    name: "Billing",
-    href: "/dashboard/billing",
-    icon: BanknotesIcon,
-  },
+
+//   {
+//     name: "Notifications",
+//     href: "/dashboard/notifications",
+//     icon: BellIcon,
+//     current: false,
+//   },
+// //   {
+// //     name: "Billing",
+// //     href: "/dashboard/billing",
+// //     icon: BanknotesIcon,
+// //   },
+//   {
+//     name: "Control",
+//     href: "/dashboard/control",
+//     icon: BanknotesIcon,
+//   },
 ];
 
 interface Props {
@@ -33,7 +46,7 @@ interface Props {
   setSidebarOpen: any;
 }
 
-const DashboardSidebar = ({ sidebarOpen, setSidebarOpen }: Props) => {
+const AdminDashboardSidebar = ({ sidebarOpen, setSidebarOpen }: Props) => {
   const location = useLocation();
   const router = useNavigate();
 
@@ -174,4 +187,4 @@ const DashboardSidebar = ({ sidebarOpen, setSidebarOpen }: Props) => {
   );
 };
 
-export default DashboardSidebar;
+export default AdminDashboardSidebar;

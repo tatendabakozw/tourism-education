@@ -28,7 +28,7 @@ const PaymentNotifications = (props: Props) => {
       <div className="text-slate-700 flex flex-row items-center justify-between w-full px-2">
         <p>Payments</p>
         <div>
-          <div
+          <button
             onClick={itemsToShow <= DEFAULT_NUMBER_RENDER ? showmore : showless}
             className="flex bg-white rounded-full p-2 cursor-pointer"
           >
@@ -37,7 +37,7 @@ const PaymentNotifications = (props: Props) => {
             ) : (
               <XMarkIcon height={16} width={16} />
             )}
-          </div>
+          </button>
         </div>
       </div>
       {payments.slice(0, itemsToShow).map((item, index) => (

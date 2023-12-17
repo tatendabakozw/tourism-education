@@ -81,7 +81,7 @@ const Login = (props: Props) => {
     }
   };
   return (
-    <GeneralLayout>
+    <>
       <div className="flex min-h-screen flex-col bg-gray-100 sm:px-6 lg:px-8">
         <div className="pt-12 sm:mx-auto sm:w-full sm:max-w-md">
           <h1 className="my-2 text-center text-lg font-extrabold text-gray-900 md:text-3xl">
@@ -204,7 +204,7 @@ const Login = (props: Props) => {
           </div>
         </div>
       </div>
-    </GeneralLayout>
+    </>
   );
 };
 

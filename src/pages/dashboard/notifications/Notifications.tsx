@@ -1,5 +1,6 @@
 import PaymentNotifications from "@components/notification-sections/PaymentNotifications";
-import { EllipsisHorizontalIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import ErrorNotifications from "@components/notification-sections/ErrorNotifications";
+import InfoNotifications from "@components/notification-sections/InfoNotifications";
 import DashboardLayout from "@layouts/DashboardLayout";
 
 const Notifications = () => {
@@ -9,34 +10,13 @@ const Notifications = () => {
         <>
           <PaymentNotifications />
         </>
-        <div className="text-slate-700 flex flex-row items-center justify-between w-full px-2">
-          <p>Errors</p>
-          <div>
-            <div className="flex bg-white rounded-full p-2 cursor-pointer">
-              <EllipsisHorizontalIcon height={16} width={16} />
-            </div>
-          </div>
-        </div>
-        <div className="bg-white rounded-lg p-4 border-l-8 border-red-600 ">
-          sadjhlkds
-        </div>
-        <div className="bg-white rounded-lg p-4 border-l-8 border-red-600">
-          sadjhlkds
-        </div>
-        <div className="text-slate-700 flex flex-row items-center justify-between w-full px-2">
-          <p>Info</p>
-          <div>
-            <div className="flex bg-white rounded-full p-2 cursor-pointer">
-              <EllipsisHorizontalIcon height={16} width={16} />
-            </div>
-          </div>
-        </div>
-        <div className="bg-white rounded-lg p-4 border-l-8 border-blue-600 ">
-          sadjhlkds
-        </div>
-        <div className="bg-white rounded-lg p-4 border-l-8 border-blue-600">
-          sadjhlkds
-        </div>
+        <>
+          <ErrorNotifications />
+        </>
+
+        <>
+          <InfoNotifications />
+        </>
       </div>
     </DashboardLayout>
   );
