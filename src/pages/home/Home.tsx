@@ -33,7 +33,7 @@ const Home = (props: Props): ReactElement => {
             <img
               src={logo}
               alt="logo icon"
-              className="md:h-24 h-16 md:w-32 w-16"
+              className="md:h-24 h-16 md:w-32 w-24"
             />
           </div>
 
@@ -49,7 +49,7 @@ const Home = (props: Props): ReactElement => {
             <img
               src={msu}
               alt="msu logo icon"
-              className="md:h-24 h-16 md:w-24 w-16 object-contain bg-white"
+              className="md:h-20 h-12 md:w-20 w-12 object-contain bg-white"
             />
           </div>
         </div>
@@ -79,7 +79,7 @@ const Home = (props: Props): ReactElement => {
             </Link>
           </div>
           <Link
-            to="/The-Fifth-Chinhoyi-University-of-Technology-International-Conference.pdf"
+            to="/Provisional-Hospitality-and-Tourism Education-Conf.pdf"
             download
             target="_blank"
             className="flex text-slate-900 space-x-4 flex-row items-center font-semibold py-16"
