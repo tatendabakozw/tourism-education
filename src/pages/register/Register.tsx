@@ -43,6 +43,7 @@ function Register({}: Props) {
         email: email,
         name: full_name,
         phone_number: phone,
+        agreed,
         country,
         city,
         id_number: nat_id,
@@ -205,17 +206,13 @@ function Register({}: Props) {
             label="Affiliation"
             value={org_type}
             setValue={setOrgType}
-            // is_dropdown
-            // select_options={[
-            //   { name: "Agriculture" },
-            //   { name: "Education" },
-            //   { name: "Energy" },
-            //   { name: "Tourism" },
-            //   { name: "Finance" },
-            //   { name: "Construction" },
-            //   { name: "Commerce" },
-            //   { name: "Health" },
-            // ]}
+            is_dropdown
+            select_options={[
+              { name: "Academic" },
+              { name: "Industrialists" },
+              { name: "Govenment Official" },
+              { name: "Student" },
+            ]}
             placeholder_="Indicate your organisation type"
           />
 
