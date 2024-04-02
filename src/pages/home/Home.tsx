@@ -3,7 +3,7 @@ import {
   ArrowDownCircleIcon,
   ArrowDownTrayIcon,
 } from "@heroicons/react/24/outline";
-import logo from "../../assets/icon.png";
+import logo from "../../assets/cut-new-logo.webp";
 import cog_wheel from "../../assets/cogwheel1.svg";
 import cog_blue1 from "../../assets/cog_blue1.svg";
 import msu from '@assets/michigan-state-university.svg'
@@ -33,7 +33,7 @@ const Home = (props: Props): ReactElement => {
             <img
               src={logo}
               alt="logo icon"
-              className="md:h-24 h-16 md:w-24 w-16"
+              className="md:h-24 h-16 md:w-32 w-16"
             />
           </div>
 
