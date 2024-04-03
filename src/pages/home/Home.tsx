@@ -81,7 +81,7 @@ const Home = (props: Props): ReactElement => {
             </Link>
           </div>
           <Link
-            to="/Provisional-Hospitality-and-Tourism Education-Conf.pdf"
+            to="/Conference-NOTE.docx"
             download
             target="_blank"
             className="flex text-slate-900 space-x-4 flex-row items-center font-semibold py-16"
