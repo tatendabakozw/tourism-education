@@ -149,7 +149,7 @@ function Register({}: Props) {
             label="Job Title"
             value={job_title}
             setValue={setJobTitle}
-            placeholder_="John Doe"
+            placeholder_="Accountant"
           />
           <FieldItem
             label="Title"

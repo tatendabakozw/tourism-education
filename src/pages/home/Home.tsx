@@ -3,10 +3,12 @@ import {
   ArrowDownCircleIcon,
   ArrowDownTrayIcon,
 } from "@heroicons/react/24/outline";
-import logo from "../../assets/cut-new-logo.webp";
+// import logo from "../../assets/cut-new-logo.webp";
+import logo from '../../assets/1cut .jpg'
 import cog_wheel from "../../assets/cogwheel1.svg";
 import cog_blue1 from "../../assets/cog_blue1.svg";
-import msu from '@assets/michigan-state-university.svg'
+// import msu from '@assets/michigan-state-university.svg'
+import msu from '@assets/1ASCLogo.png'
 import { Link } from "react-router-dom";
 import ConferenceSteps from "@components/ConferenceSteps/ConferenceSteps";
 
@@ -49,7 +51,7 @@ const Home = (props: Props): ReactElement => {
             <img
               src={msu}
               alt="msu logo icon"
-              className="md:h-20 h-12 md:w-20 w-12 object-contain bg-white"
+              className="md:h-20 h-12 object-contain bg-white"
             />
           </div>
         </div>
