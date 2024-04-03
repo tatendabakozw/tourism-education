@@ -30,6 +30,7 @@ function Register({}: Props) {
   const toast = useToast();
   const [agreed, setAgreed] = useState<any>(false);
   const [job_title, setJobTitle] = useState("");
+  const [name_of_org, setNameOfOrg] = useState('')
 
   const history = useNavigate();
 
@@ -212,8 +213,16 @@ function Register({}: Props) {
               { name: "Industrialists" },
               { name: "Govenment Official" },
               { name: "Student" },
+              { name: "Support source" },
             ]}
             placeholder_="Indicate your organisation type"
+          />
+          <FieldItem
+            label="Name of organisation"
+            is_message
+            value={name_of_org}
+            setValue={setNameOfOrg}
+            placeholder_="What is the name of your organisation"
           />
 
           <FieldItem
