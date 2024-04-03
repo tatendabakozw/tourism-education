@@ -8,7 +8,7 @@ import logo from '../../assets/1cut.jpg'
 import cog_wheel from "../../assets/cogwheel1.svg";
 import cog_blue1 from "../../assets/cog_blue1.svg";
 // import msu from '@assets/michigan-state-university.svg'
-import msu from '@assets/1ASCLogo.png'
+import msu from '@assets/1ascLogo.png'
 import { Link } from "react-router-dom";
 import ConferenceSteps from "@components/ConferenceSteps/ConferenceSteps";
 
