@@ -44,14 +44,14 @@ const Home = (props: Props): ReactElement => {
               to="/register"
               className="bg-blue-900 self-end flex-shrink-0  text-white md:text-sm text-xs py-2 px-3 rounded-full"
             >
-              Register Now
+              Register
             </Link>
           </div>
           <div className="flex">
             <img
               src={msu}
               alt="msu logo icon"
-              className="md:h-20 h-12 object-contain bg-white"
+              className="md:h-12 h-12 object-contain bg-white"
             />
           </div>
         </div>
