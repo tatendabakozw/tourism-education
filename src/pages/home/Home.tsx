@@ -4,7 +4,7 @@ import {
   ArrowDownTrayIcon,
 } from "@heroicons/react/24/outline";
 // import logo from "../../assets/cut-new-logo.webp";
-import logo from '../../assets/1cut .jpg'
+import logo from '../../assets/1cut.jpg'
 import cog_wheel from "../../assets/cogwheel1.svg";
 import cog_blue1 from "../../assets/cog_blue1.svg";
 // import msu from '@assets/michigan-state-university.svg'
