@@ -100,14 +100,14 @@ function Register({}: Props) {
     <div className="w-full  min-h-screen relative">
       <div className="h-60 md:bg-gradient-to-r bg-gradient-to-b from-blue-100 relative to-blue-300 items-center justify-center content-center">
         <p className="text-center font-bold text-slate-900 text-4xl">Register Now</p>
-        <div className="absolute md:h-96 h-40 md:w-96 w-40 rounded-full md:-top-20 -top-10 md:-right-20 -right-10 z-0">
+        <div className="absolute md:h-96 h-20 md:w-96 w-20 rounded-full md:-top-20 -top-10 md:-right-20 -right-10 z-0">
           <img src={cog_wheel} alt="" className="" />
         </div>
         <div className="absolute  rounded-full md:h-[600px] h-[400px] md:w-[600px] w-[400px] top-0 my-auto z-0 mx-0 bottom-0 md:-left-40 -left-40">
           <img src={cog_blue1} alt="" className="" />
         </div>
       </div>
-      <div className="max-w-7xl border border-slate-200/20 mt-8 shadow bg-white absolute z-50 left-1/2 transform -translate-x-1/2  p-4 w-full mx-auto rounded-lg">
+      <div className="max-w-7xl border border-slate-200/20 mt-8 shadow bg-white absolute z-50 left-1/2 transform -translate-x-1/2 w-full mx-auto rounded-lg">
         <div className="bg-white w-full max-w-5xl flex flex-col space-y-8 mx-auto md:p-8 p-4 h-full rounded-lg">
           <div className="flex  w-full flex-row items-center justify-between">
             <Link
