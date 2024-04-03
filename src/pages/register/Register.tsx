@@ -55,6 +55,7 @@ function Register({}: Props) {
         special_needs,
         diet: dietary,
         title: title,
+        organisation_name: name_of_org
       });
       console.log(data);
       setEmail("");
